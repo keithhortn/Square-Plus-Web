@@ -1,0 +1,23 @@
+// font sizes
+:root {
+  --must-see: 5rem;
+  --header1: 3.25rem;
+  --header2: 2.25rem;
+  --header3: 1.5rem;
+  --body: 1.125rem;
+  --top-nav-links: 0.8rem;
+}
+
+h1 {
+  font-size: var(--header1);
+  font-weight: bolder;
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+p {
+  font-size: var(--body);
+}

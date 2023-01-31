@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--almost-white);
+}
+
+.sb-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2000px;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.simple-box-shadow {
+  filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.14));
+}
+
+.wrapper {
+  max-width: 1400px;
+}
+
+:root {
+  --must-see: 5rem;
+  --header1: 3.25rem;
+  --header2: 2.25rem;
+  --header3: 1.5rem;
+  --body: 1.125rem;
+  --top-nav-links: 0.8rem;
+}
+
+h1 {
+  font-size: var(--header1);
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+p {
+  font-size: var(--body);
+}
+
+:root {
+  --main-back-color: #fafafa;
+  --almost-white: #f7f7f7;
+  --almost-black: #2e2e2e;
+  --orange-ish: #ffd57c;
+  --blue-ish: #42acc7;
+}
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
+
+.hamburger-container {
+  width: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger-container .ham-link {
+  width: 100%;
+}
+.hamburger-container .ham-lines {
+  width: 100%;
+  border: solid 1px var(--almost-white);
+  border-radius: 50px;
+  margin-bottom: 4px;
+}
+
+.nav-bar-container {
+  background-color: var(--almost-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.top-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  margin-right: 2.5rem;
+}
+.top-logo-container .logo-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-logo-container .logo-link:visited {
+  border: none;
+  text-decoration: none;
+}
+.top-logo-container .sp-logo {
+  width: 100%;
+  background-color: var(--main-back-color);
+  border-radius: var(--simple-br);
+}
+
+.nav-link {
+  color: var(--almost-white);
+  font-size: var(--top-nav-links);
+  margin-right: 2.5rem;
+}
+.nav-link:hover {
+  filter: brightness(3);
+}
+
+.svg-white {
+  filter: invert(100%) sepia(1%) saturate(269%) hue-rotate(359deg) brightness(117%) contrast(94%);
+  width: 1.2rem;
+}
+.svg-white:hover {
+  filter: invert(100%) sepia(1%) saturate(269%) hue-rotate(359deg) brightness(400%) contrast(150%);
+}
+
+.top-shop-i {
+  margin-left: 2.5rem;
+}
+
+.sale-boxes-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 2.5rem 0;
+}
+.sale-boxes-container .sale-box {
+  background-color: var(--blue-ish);
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 3rem;
+  border-radius: 10px;
+}
+.sale-boxes-container .sale-statement-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--almost-white);
+}
+.sale-boxes-container .st-target {
+  font-size: var(--header3);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sale-boxes-container .sale-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--almost-white);
+  border-radius: 15px;
+}
+.sale-boxes-container .sale-btn-container .sb-target {
+  padding: 0.75rem 2rem;
+}
+
+.hero-container {
+  height: 1000px;
+  width: 100%;
+  background-image: url("/media/shoe-sale.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.top-shop-cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--almost-black);
+}
+.top-shop-cta-container .top-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-shop-cta-container .cta-statement {
+  text-transform: uppercase;
+  text-align: center;
+}
+.top-shop-cta-container .cta-sub {
+  text-align: center;
+}
+
+.shop-btn {
+  background-color: var(--orange-ish);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.shop-btn:hover {
+  background-color: var(--blue-ish);
+  color: var(--almost-white);
+}
+
+.essentials-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.essentials-main-container .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 8rem;
+}
+.essentials-main-container .fe-item {
+  width: 40rem;
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+.essentials-main-container .inner-info-container {
+  width: 100%;
+  background-color: var(--almost-white);
+  padding: 2rem 2rem;
+  border-radius: 0 0 10px 10px;
+}
+.essentials-main-container .inner-info-container p {
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.grid-title {
+  padding: 5rem 0 1rem 0;
+  grid-area: 1/span 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-title h3 {
+  width: 80rem;
+}
+
+.outwear-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  padding: 0;
+}
+.outwear-container .bottom-gif-container {
+  width: 100%;
+  background-image: url(/images/bottom-gif.gif);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-container {
+    display: block !important;
+  }
+  .nav-bar-container {
+    justify-content: space-between !important;
+  }
+  .top-logo-container {
+    margin: 0 !important;
+  }
+  .nav-link,
+.search-icon-container {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .top-shop-i {
+    margin: 0 !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,284 @@
+@forward "globals";
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-row-se {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin bright-hover {
+  &:hover {
+    filter: brightness(3);
+  }
+}
+
+// Styles for Loading Spinner
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
+
+// Styles for Navigation
+.hamburger-container {
+  // background-color: orange;
+  width: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .ham-link {
+    width: 100%;
+  }
+  .ham-lines {
+    width: 100%;
+    border: solid 1px var(--almost-white);
+    border-radius: 50px;
+    margin-bottom: 4px;
+  }
+}
+
+.nav-bar-container {
+  background-color: var(--almost-black);
+  @include flex-row-center;
+  padding: 0.5rem 1rem;
+}
+.top-logo-container {
+  @include flex-row-center;
+  width: 3.75rem;
+  margin-right: 2.5rem;
+  .logo-link {
+    width: 100%;
+    @include flex-row-center;
+    &:visited {
+      border: none;
+      text-decoration: none;
+    }
+  }
+  .sp-logo {
+    width: 100%;
+    background-color: var(--main-back-color);
+    border-radius: var(--simple-br);
+  }
+}
+.nav-link {
+  color: var(--almost-white);
+  font-size: var(--top-nav-links);
+  margin-right: 2.5rem;
+  @include bright-hover();
+}
+
+.svg-white {
+  filter: invert(100%) sepia(1%) saturate(269%) hue-rotate(359deg)
+    brightness(117%) contrast(94%);
+  width: 1.2rem;
+  &:hover {
+    filter: invert(100%) sepia(1%) saturate(269%) hue-rotate(359deg)
+      brightness(400%) contrast(150%);
+  }
+}
+
+.top-shop-i {
+  margin-left: 2.5rem;
+}
+
+// Styles for Sale Boxes Area
+.sale-boxes-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 2.5rem 0;
+  .sale-box {
+    background-color: var(--blue-ish);
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 3rem;
+    border-radius: 10px;
+  }
+  .sale-statement-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--almost-white);
+  }
+  .st-target {
+    font-size: var(--header3);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .sale-btn-container {
+    @include flex-row-center();
+    background-color: var(--almost-white);
+    border-radius: 15px;
+    .sb-target {
+      padding: 0.75rem 2rem;
+    }
+  }
+}
+
+// Styles for Hero Section
+.hero-container {
+  height: 1000px;
+  width: 100%;
+  background-image: url("/media/shoe-sale.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+// STYLES FOR MAIN SECTION
+// Styles for Shop CTA
+.top-shop-cta-container {
+  // background-color: var(--orange-ish);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--almost-black);
+  .top-cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-statement {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .cta-sub {
+    text-align: center;
+  }
+}
+.shop-btn {
+  background-color: var(--orange-ish);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  &:hover {
+    background-color: var(--blue-ish);
+    color: var(--almost-white);
+  }
+}
+
+// Styles for Shop Essentials
+.essentials-main-container {
+  width: 100%;
+  display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: yellow;
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 8rem;
+  }
+  .fe-item {
+    width: 40rem;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    margin: 1rem auto;
+  }
+  .inner-info-container {
+    width: 100%;
+    background-color: var(--almost-white);
+    padding: 2rem 2rem;
+    border-radius: 0 0 10px 10px;
+    p {
+      // color: var(--almost-white);
+      margin-bottom: 2rem;
+      padding-left: 0.5rem;
+    }
+  }
+}
+.grid-title {
+  padding: 5rem 0 1rem 0;
+  grid-area: 1 / span 3;
+  width: 100%;
+  // background-color: yellow;
+  display: flex;
+  justify-content: center;
+}
+.grid-title h3 {
+  width: 80rem;
+}
+
+// Styles for Bottom GIF and Outwear Section
+.outwear-container {
+  width: 100%;
+  // height: fit-content;
+  // display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  padding: 0;
+  .bottom-gif-container {
+    // height: 1300px;
+    width: 100%;
+    background-image: url(/images/bottom-gif.gif);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+  }
+  // .mly-container {
+  // height: 1300px;
+  // width: 100%;
+  // background-image: url(/images/outerwear\ -mly.png);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // }
+}
+
+// MEDIA QUERIES FOR TABLET
+@media screen and (max-width: 768px) {
+  // NAV BAR
+  .hamburger-container {
+    display: block !important;
+  }
+  .nav-bar-container {
+    justify-content: space-between !important;
+  }
+  .top-logo-container {
+    margin: 0 !important;
+  }
+  .nav-link,
+  .search-icon-container {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .top-shop-i {
+    margin: 0 !important;
+  }
+}
