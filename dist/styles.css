@@ -35,7 +35,11 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 110rem;
+}
+
+.section-margin-below {
+  margin-bottom: 2.5rem;
 }
 
 :root {
@@ -163,7 +167,9 @@ p {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 2.5rem 0;
+}
+.sale-boxes-container .sb-flex {
+  width: 100%;
 }
 .sale-boxes-container .sale-box {
   background-color: var(--blue-ish);
@@ -196,7 +202,7 @@ p {
 }
 
 .hero-container {
-  height: 1000px;
+  height: 59.5rem;
   width: 100%;
   background-image: url("/media/shoe-sale.gif");
   background-size: contain;
@@ -231,7 +237,6 @@ p {
   padding: 0.5rem 2rem;
   border-radius: 20px;
   margin-top: 1rem;
-  margin-bottom: 2.5rem;
 }
 .shop-btn:hover {
   background-color: var(--blue-ish);
@@ -242,18 +247,15 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .essentials-main-container .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(2, auto);
-  margin-bottom: 8rem;
 }
 .essentials-main-container .fe-item {
-  width: 40rem;
-  height: 40rem;
+  width: 25rem;
+  height: 25rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,36 +268,64 @@ p {
 .essentials-main-container .inner-info-container {
   width: 100%;
   background-color: var(--almost-white);
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0 0 10px 10px;
 }
 .essentials-main-container .inner-info-container p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-left: 0.5rem;
 }
 
-.grid-title {
-  padding: 5rem 0 1rem 0;
-  grid-area: 1/span 3;
+.section-title {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.grid-title h3 {
-  width: 80rem;
+.section-title h3 {
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .outwear-container {
   width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #404040;
-  padding: 0;
 }
 .outwear-container .bottom-gif-container {
   width: 100%;
   background-image: url(/images/bottom-gif.gif);
+  display: flex;
+  justify-content: right;
+  border-radius: 10px;
+}
+.outwear-container .outwear-sale-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-right: solid 1rem #f7f7f7;
+}
+.outwear-container .outwear-ss-target {
+  filter: drop-shadow(0 0 0.75rem #404040);
+}
+.outwear-container .outwear-btn {
+  filter: drop-shadow(0 0 0.75rem #404040);
+}
+.outwear-container .mly-target {
+  position: relative;
+  width: 50%;
+  border-left: solid 1rem #f7f7f7;
+  border-radius: 0 10px 10px 0;
+}
+.outwear-container .new-arrival-svg {
+  position: absolute;
+  width: 15rem;
+  top: 150rem;
+  right: 35em;
+  transform: rotate(-15deg);
+  filter: drop-shadow(0 0 0.75rem #404040);
 }
 
 @media screen and (max-width: 768px) {

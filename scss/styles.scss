@@ -104,7 +104,9 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 2.5rem 0;
+  .sb-flex {
+    width: 100%;
+  }
   .sale-box {
     background-color: var(--blue-ish);
     width: 30rem;
@@ -136,7 +138,7 @@
 
 // Styles for Hero Section
 .hero-container {
-  height: 1000px;
+  height: 59.5rem;
   width: 100%;
   background-image: url("/media/shoe-sale.gif");
   background-size: contain;
@@ -173,7 +175,7 @@
   padding: 0.5rem 2rem;
   border-radius: 20px;
   margin-top: 1rem;
-  margin-bottom: 2.5rem;
+  // margin-bottom: 2.5rem;
   &:hover {
     background-color: var(--blue-ish);
     color: var(--almost-white);
@@ -184,21 +186,17 @@
 .essentials-main-container {
   width: 100%;
   display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: column;
   justify-content: center;
-  align-items: center;
-  // background-color: yellow;
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: repeat(2, auto);
-    margin-bottom: 8rem;
+    // margin-bottom: 5rem;
+    // background-color: orange;
   }
   .fe-item {
-    width: 40rem;
-    height: 40rem;
+    width: 25rem;
+    height: 25rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,53 +209,70 @@
   .inner-info-container {
     width: 100%;
     background-color: var(--almost-white);
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 0 0 10px 10px;
     p {
       // color: var(--almost-white);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       padding-left: 0.5rem;
     }
   }
 }
-.grid-title {
-  padding: 5rem 0 1rem 0;
-  grid-area: 1 / span 3;
+.section-title {
+  // padding: 5rem 0 0 0;
   width: 100%;
   // background-color: yellow;
   display: flex;
   justify-content: center;
 }
-.grid-title h3 {
-  width: 80rem;
+.section-title h3 {
+  width: 100%;
+  padding: 0 2rem;
 }
 
 // Styles for Bottom GIF and Outwear Section
 .outwear-container {
   width: 100%;
-  // height: fit-content;
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #404040;
-  padding: 0;
+
+  // background-color: #404040;
+  // padding: 0;
   .bottom-gif-container {
-    // height: 1300px;
     width: 100%;
     background-image: url(/images/bottom-gif.gif);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    display: flex;
+    justify-content: right;
+    border-radius: 10px;
   }
-  // .mly-container {
-  // height: 1300px;
-  // width: 100%;
-  // background-image: url(/images/outerwear\ -mly.png);
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // }
+  .outwear-sale-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-right: solid 1rem #f7f7f7;
+  }
+  .outwear-ss-target {
+    filter: drop-shadow(0 0 0.75rem #404040);
+  }
+  .outwear-btn {
+    filter: drop-shadow(0 0 0.75rem #404040);
+  }
+  .mly-target {
+    position: relative;
+    width: 50%;
+    border-left: solid 1rem #f7f7f7;
+    border-radius: 0 10px 10px 0;
+  }
+  .new-arrival-svg {
+    position: absolute;
+    width: 15rem;
+    top: 150rem;
+    right: 35em;
+    transform: rotate(-15deg);
+    filter: drop-shadow(0 0 0.75rem #404040);
+  }
 }
 
 // MEDIA QUERIES FOR TABLET

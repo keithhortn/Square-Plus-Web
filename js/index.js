@@ -36,13 +36,17 @@ const shoesBox = document.querySelector(".shoes");
 const bagsBox = document.querySelector(".bags");
 const accessoriesBox = document.querySelector(".accessories");
 
-clothingBox.style.backgroundImage = "url(/images/es-clothing.jpg)";
+clothingBox.style.backgroundImage = "url(/images/es-clothing.jpg/)"; // update images here
+clothingBox.style.backgroundColor = "var(--blue-ish)"; // temp color
 // clothingBox.style.gridArea = "1 / span 1";
-shoesBox.style.backgroundImage = "url(/images/es-shoes.jpg)";
+shoesBox.style.backgroundImage = "url(/images/es-shoes.jpg/)"; // update images here
+shoesBox.style.backgroundColor = "var(--blue-ish)"; // temp color
 // shoesBox.style.gridArea = "2 / span 1";
-bagsBox.style.backgroundImage = "url(/images/es-bags.jpg)";
+bagsBox.style.backgroundImage = "url(/images/es-bags.jpg/)"; // update images here
+bagsBox.style.backgroundColor = "var(--blue-ish)"; // temp color
 // bagsBox.style.gridArea = "1 / span 1";
-accessoriesBox.style.backgroundImage = "url(/images/es-accessories.jpg)";
+accessoriesBox.style.backgroundImage = "url(/images/es-accessories.jpg/)"; // update images here
+accessoriesBox.style.backgroundColor = "var(--blue-ish)"; // temp color
 // accessoriesBox.style.gridArea = "2 / span 1";
 
 // window.onload = function () {
