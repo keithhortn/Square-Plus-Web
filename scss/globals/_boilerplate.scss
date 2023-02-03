@@ -22,7 +22,6 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 2000px;
-  padding: 0 1rem;
   flex-wrap: wrap;
 }
 
@@ -35,10 +34,15 @@ body {
 }
 
 .main-wrapper {
-  max-width: 100rem;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .section-margin-below {
   margin-bottom: 2.5rem;
+}
+
+.divider {
+  width: 100%;
+  border: solid 1px var(--almost-black);
 }

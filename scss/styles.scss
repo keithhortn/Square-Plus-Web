@@ -37,6 +37,8 @@
 }
 
 // Styles for Navigation
+
+// Styles for hamburger button and sidebar navigation
 .hamburger-container {
   // background-color: orange;
   width: 1.25rem;
@@ -107,10 +109,12 @@
 // Styles for Sale Boxes Area
 .sale-boxes-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  margin-top: 5rem;
   .sb-flex {
     width: 100%;
+    justify-content: space-between;
   }
   .sale-box {
     background-color: var(--blue-ish);
@@ -127,7 +131,7 @@
     color: var(--almost-white);
   }
   .st-target {
-    font-size: var(--header3);
+    font-size: var(--body);
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -143,19 +147,18 @@
 
 // Styles for Hero Section
 .hero-container {
-  height: 59.5rem;
+  height: 50rem;
   width: 100%;
   background-image: url("/media/shoe-sale.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
+  // margin: 0;
 }
 
 // STYLES FOR MAIN SECTION
 // Styles for Shop CTA
 .top-shop-cta-container {
-  // background-color: var(--orange-ish);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,16 +195,18 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  // overflow: hidden;
+  background-color: rgb(235, 235, 235);
+  flex-direction: column;
   .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    // margin-bottom: 5rem;
-    // background-color: orange;
+    width: 100%;
+    justify-content: start;
+    background-color: green;
   }
   .fe-item {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,7 +270,7 @@
     filter: drop-shadow(0 0 0.75rem #404040);
   }
   .mly-target {
-    position: relative;
+    // position: relative;
     width: 50%;
     border-left: solid 1rem #f7f7f7;
     border-radius: 0 10px 10px 0;

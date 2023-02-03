@@ -31,10 +31,10 @@ function hideSpinner() {
 }
 
 // Essential Section
-const clothingBox = document.querySelector(".clothing");
-const shoesBox = document.querySelector(".shoes");
-const bagsBox = document.querySelector(".bags");
-const accessoriesBox = document.querySelector(".accessories");
+const clothingBox = document.getElementsByClassName("clothing");
+const shoesBox = document.getElementsByClassName("shoes");
+const bagsBox = document.getElementsByClassName("bags");
+const accessoriesBox = document.getElementsByClassName("accessories");
 
 clothingBox.style.backgroundImage = "url(/images/es-clothing.jpg/)"; // update images here
 clothingBox.style.backgroundColor = "var(--blue-ish)"; // temp color
